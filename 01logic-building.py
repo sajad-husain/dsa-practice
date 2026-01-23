@@ -25,3 +25,9 @@ sum = 0
 for i in range(1, number + 1):
     sum += number
 print("Sum of natural numbers is",sum)
+
+# Sum of squared natural Numbers
+squared_sum = 0
+for i in range(1, number + 1):
+    squared_sum += number^2
+print(squared_sum)
