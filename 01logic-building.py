@@ -19,3 +19,9 @@ print(result)
 # Multiplication Table
 for i in range(1, 11):
     print(f"{number} x {i} = {number*i}")
+    
+# Sum of natural numbers
+sum = 0 
+for i in range(1, number + 1):
+    sum += number
+print("Sum of natural numbers is",sum)
