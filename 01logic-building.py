@@ -21,17 +21,22 @@ for i in range(1, 11):
     print(f"{number} x {i} = {number*i}")
     
 # Sum of natural numbers
-sum = 0 
 def sum_of_natural():
+    sum = 0 
     for i in range(1, number + 1):
         sum += number
-        print("Sum of natural numbers is",sum)
         return sum
 
 # Sum of squared natural Numbers
-squared_sum = 0
 def sum_of_squared():
+    squared_sum = 0
     for i in range(1, number + 1):
         squared_sum += number^2
         print(squared_sum)
         return squared_sum
+
+result1 = sum_of_natural()
+print(f"sum of natural numbers is : {result1}")
+
+result2 = sum_of_squared()
+print(f"sum of squared natural numbers is : {result2}")
