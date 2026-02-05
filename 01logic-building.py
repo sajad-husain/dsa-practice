@@ -31,7 +31,7 @@ def sum_of_natural():
 def sum_of_squared():
     squared_sum = 0
     for i in range(1, number + 1):
-        squared_sum += number^2
+        squared_sum += number**2
         print(squared_sum)
         return squared_sum
 
