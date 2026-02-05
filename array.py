@@ -80,13 +80,21 @@ print("===NUMPY MODULE===")
 
 # val = ones(4) # create array with ones values
 
-val = full(5, 14) # creating array with values you choose
+# val = full(5, 14) # creating array with values you choose
 
-for i in val:
-    print(i, end=" ") 
+# for i in val:
+#     print(i, end=" ") 
     
     
 # linspace
 # arange
 # logspace
 # zeros
+
+print("===MULTIDEMNSIONAL ARRAYS===")
+
+one = array([1,2,3])
+
+two = array([[1,2],[3,4],[5,6]])
+
+three = array([ [ [1,2], [3,4] ], [[5,6], [7,8]] ])
