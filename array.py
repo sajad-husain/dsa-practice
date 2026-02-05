@@ -28,5 +28,9 @@ val.reverse()
 print("inserting an element in array", val.insert(1, 90))
 print("adding elemet in end", val.append(121))
 
+print("createing a  new array and inserting previous array in it")
+copyArray = array(val.typecode, (x*3 for x in val))
+print(copyArray)
+
 for i in val:
     print(i, end=" ")
