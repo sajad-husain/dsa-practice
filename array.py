@@ -75,8 +75,12 @@ print("===NUMPY MODULE===")
 # val = logspace(10, 20, 4)
 # #creating logrithmic values
 
-val = zeros(3)
+# val = zeros(3)
 # creating array with zero values 
+
+# val = ones(4) # create array with ones values
+
+val = full(5, 14) # creating array with values you choose
 
 for i in val:
     print(i, end=" ") 
