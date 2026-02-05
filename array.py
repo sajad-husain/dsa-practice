@@ -62,9 +62,13 @@ print("===NUMPY MODULE===")
 # you can create array direct while using numpy module
 # val = array([1,2,4]) 
 
-val = array([1,2,4,'4', 5.4])
+# val = array([1,2,4,'4', 5.4])
 #numpy ka advantage yeah h k heterogeous array bana skty hn
 #we can store diff type of elements in our array 
+
+val = linspace(10, 20, 4)
+# create 4 evenly spaced samples between 10 and 20
+
 for i in val:
     print(i, end=" ") 
     
