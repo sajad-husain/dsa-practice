@@ -69,8 +69,14 @@ print("===NUMPY MODULE===")
 # val = linspace(10, 20, 4)
 # create arary 4 evenly spaced samples between 10 and 20
 
-val = arange(10, 20, 2)
-# create array with evencly spaced values
+# val = arange(10, 20, 2)
+# # create array with evencly spaced values
+
+# val = logspace(10, 20, 4)
+# #creating logrithmic values
+
+val = zeros(3)
+# creating array with zero values 
 
 for i in val:
     print(i, end=" ") 
