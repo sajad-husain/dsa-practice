@@ -31,6 +31,9 @@ print(val) #print whole array
 print("createing a  new array and inserting previous array in it")
 copyArray = array(val.typecode, (x*3 for x in val))
 
+# no index will delete last element, now it's deleting 3rd index
+print("deleting last element of array", copyArray.pop(3))
+
 for i in copyArray:
     print(i, end=" ")
 
