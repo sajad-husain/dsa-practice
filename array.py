@@ -20,17 +20,17 @@ print(val) #print whole array
 #     print("enhanced loop",x)
 
 # print('\n')
-print("checking type code", val.typecode)
+# print("checking type code", val.typecode)
 
-print("reversing the array")
-val.reverse()
+# print("reversing the array")
+# val.reverse()
 
-print("inserting an element in array", val.insert(1, 90))
-print("adding elemet in end", val.append(121))
+# print("inserting an element in array", val.insert(1, 90))
+# print("adding elemet in end", val.append(121))
 
 print("createing a  new array and inserting previous array in it")
 copyArray = array(val.typecode, (x*3 for x in val))
-print(copyArray)
 
-for i in val:
+for i in copyArray:
     print(i, end=" ")
+
