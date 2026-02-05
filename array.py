@@ -1,6 +1,7 @@
 # import array
 # import array as Arr1 # Alias for array 
 from array import * #perfect we'll be using module directly 
+import numpy as np
 
 # val = array('i', [1,2,3,4,5,6,7,8,9])
 # print(val) #print whole array
@@ -46,10 +47,12 @@ from array import * #perfect we'll be using module directly
 # for i in newArray:
 #     print(i, end=" ")
 
-arr1 = array('i', [])
-n = int(input("Enter length of array: "))
+arr1 = array('i', [1,2,3,4,5,6,7])
+# n = int(input("Enter length of array: "))
 
-for i in range(0, n):
-    arr1.append(int(input("Enter next element: ")))
+# for i in range(0, n):
+#     arr1.append(int(input("Enter next element: ")))
 
-print(arr1)
+searchedElement = arr1.index(4)
+
+print(searchedElement)
