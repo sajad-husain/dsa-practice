@@ -34,6 +34,9 @@ copyArray = array(val.typecode, (x*3 for x in val))
 # no index will delete last element, now it's deleting 3rd index
 print("deleting last element of array", copyArray.pop(3))
 
+# this methods remves element whichever you provide
+copyArray.remove(6)
+
 for i in copyArray:
     print(i, end=" ")
 
