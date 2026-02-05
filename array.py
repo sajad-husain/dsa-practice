@@ -2,8 +2,8 @@
 # import array as Arr1 # Alias for array 
 from array import * #perfect we'll be using module directly 
 
-val = array('i', [1,2,3,4,5,6,7,8,9])
-print(val) #print whole array
+# val = array('i', [1,2,3,4,5,6,7,8,9])
+# print(val) #print whole array
 
 # # iterate on each element use for loop
 # for i in range(0, 5):
@@ -28,8 +28,8 @@ print(val) #print whole array
 # print("inserting an element in array", val.insert(1, 90))
 # print("adding elemet in end", val.append(121))
 
-print("createing a  new array and inserting previous array in it")
-copyArray = array(val.typecode, (x*3 for x in val))
+# print("createing a  new array and inserting previous array in it")
+# copyArray = array(val.typecode, (x*3 for x in val))
 
 # # no index will delete last element, now it's deleting 3rd index
 # print("deleting last element of array", copyArray.pop(3))
@@ -37,12 +37,19 @@ copyArray = array(val.typecode, (x*3 for x in val))
 # # this methods remves element whichever you provide
 # copyArray.remove(6)
 
-print("Slicing in Arrays")
-#  newArray = val[start index jo include hoga : end index include ni hoga]
-# newArray = val[ 2 : 5 ] # 2 index se start 5th index exlude
-# newArray = val[2 : -3] # 2 index se start last k 3 index ko chor print krega sb
-newArray = val[ :: -1] # revere krega aray ko 
+# print("Slicing in Arrays")
+# #  newArray = val[start index jo include hoga : end index include ni hoga]
+# # newArray = val[ 2 : 5 ] # 2 index se start 5th index exlude
+# # newArray = val[2 : -3] # 2 index se start last k 3 index ko chor print krega sb
+# newArray = val[ :: -1] # revere krega aray ko 
 
-for i in newArray:
-    print(i, end=" ")
+# for i in newArray:
+#     print(i, end=" ")
 
+arr1 = array('i', [])
+n = int(input("Enter length of array: "))
+
+for i in range(0, n):
+    arr1.append(int(input("Enter next element")))
+
+print(arr1)
