@@ -1,7 +1,8 @@
 # import array
 # import array as Arr1 # Alias for array 
 from array import * #perfect we'll be using module directly 
-import numpy as np
+# import numpy as np
+from numpy import *
 
 # val = array('i', [1,2,3,4,5,6,7,8,9])
 # print(val) #print whole array
@@ -47,12 +48,19 @@ import numpy as np
 # for i in newArray:
 #     print(i, end=" ")
 
-arr1 = array('i', [1,2,3,4,5,6,7])
-# n = int(input("Enter length of array: "))
+# arr1 = array('i', [1,2,3,4,5,6,7])
+# # n = int(input("Enter length of array: "))
 
-# for i in range(0, n):
-#     arr1.append(int(input("Enter next element: ")))
+# # for i in range(0, n):
+# #     arr1.append(int(input("Enter next element: ")))
 
-searchedElement = arr1.index(4)
+# searchedElement = arr1.index(4)
 
-print(searchedElement)
+# print(searchedElement)
+
+print("===NUMPY MODULE===")
+# you can create array direct while using numpy module
+val = array([1,2,4]) 
+
+for i in val:
+    print(i, end=" ")
