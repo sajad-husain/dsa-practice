@@ -50,6 +50,6 @@ arr1 = array('i', [])
 n = int(input("Enter length of array: "))
 
 for i in range(0, n):
-    arr1.append(int(input("Enter next element")))
+    arr1.append(int(input("Enter next element: ")))
 
 print(arr1)
