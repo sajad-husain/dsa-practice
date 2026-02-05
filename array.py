@@ -60,7 +60,16 @@ from numpy import *
 
 print("===NUMPY MODULE===")
 # you can create array direct while using numpy module
-val = array([1,2,4]) 
+# val = array([1,2,4]) 
 
+val = array([1,2,4,'4', 5.4])
+#numpy ka advantage yeah h k heterogeous array bana skty hn
+#we can store diff type of elements in our array 
 for i in val:
-    print(i, end=" ")
+    print(i, end=" ") 
+    
+    
+# linspace
+# arange
+# logspace
+# zeros
