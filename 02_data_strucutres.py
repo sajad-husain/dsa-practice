@@ -228,3 +228,20 @@ person = {
     "hobbies": ['reading', 'coding', 'hiking']
 }
 print("after adding data to dictionary", person)
+
+# Accessing dictionary by key
+print(person["name"])
+print(person["age"])
+print(person["city"])
+print(person["hobbies"])
+
+# using get method for safe access
+print(person.get("name"))
+print(person.get("job"))
+print(person.get("job", "not there")) # default value second paramter men hogi
+print(person.get("age"))
+print(person.get("city"))
+print(person.get("hobbies"))
+
+if "name" in person:
+    print("key exists")
