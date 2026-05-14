@@ -96,22 +96,39 @@
 #     return a + b
 
 # lambda argument: expression
-add = lambda a , b: a + b
-print(add(5,3))
+# add = lambda a , b: a + b
+# print(add(5,3))
 
-num_list = [1,2,3,4,5,6]
-square = list(map(lambda x: x*x, num_list))
-print("Mapping and Squaring: ", square)
+# num_list = [1,2,3,4,5,6]
+# square = list(map(lambda x: x*x, num_list))
+# print("Mapping and Squaring: ", square)
 
-filter = list(filter(lambda x: x % 2 == 0, num_list ))
-print("Filtered list ", filter)
+# filter = list(filter(lambda x: x % 2 == 0, num_list ))
+# print("Filtered list ", filter)
 
-student = [
-    {"name": "Alice", "grade": 85},
-    {"name": "Ling Shao", "grade": 15},
-    {"name": "Proton", "grade": 65}
-]
+# student = [
+#     {"name": "Alice", "grade": 85},
+#     {"name": "Ling Shao", "grade": 15},
+#     {"name": "Proton", "grade": 65}
+# ]
 
-student.sort(key=lambda x:x['grade'])
-print(student)
+# student.sort(key=lambda x:x['grade'])
+# print(student)
 
+# LIST COMPREHENSION
+squared_list = []
+for i in range(5):
+    squared_list.append(i*i)
+print(squared_list)
+
+# another way but more elegant way
+
+sq = [x**2 for x in range(11)]
+print(sq)
+
+mul =[x*2 for x in range(5)]
+print(mul)
+
+words = ["hello", "world", "python"]
+uppercase = [w.upper() for w in words]
+print(uppercase)
