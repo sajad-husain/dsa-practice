@@ -116,19 +116,31 @@
 # print(student)
 
 # LIST COMPREHENSION
-squared_list = []
-for i in range(5):
-    squared_list.append(i*i)
-print(squared_list)
+# squared_list = []
+# for i in range(5):
+#     squared_list.append(i*i)
+# print(squared_list)
 
-# another way but more elegant way
+# # another way but more elegant way
 
-sq = [x**2 for x in range(11)]
-print(sq)
+# sq = [x**2 for x in range(11)]
+# print(sq)
 
-mul =[x*2 for x in range(5)]
-print(mul)
+# mul =[x*2 for x in range(5)]
+# print(mul)
 
-words = ["hello", "world", "python"]
-uppercase = [w.upper() for w in words]
-print(uppercase)
+# words = ["hello", "world", "python"]
+# uppercase = [w.upper() for w in words]
+# print(uppercase)
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+evens = [ x for x in nums if x % 2 == 0]
+print(evens)
+
+greate_than_five = [ x for x in nums if x > 5]
+print(greate_than_five)
+
+result = [ x for x in nums if x % 2 == 0 and x > 4]
+print(result)
+
