@@ -310,3 +310,7 @@ print("union of seta and setb is", union_set)
 # intersection
 sect = set_1.intersection(set_2)
 print("intersection of two sets", sect)
+
+# differece item in first but not in second
+diff = set_1.difference(set_2)
+print(diff)
