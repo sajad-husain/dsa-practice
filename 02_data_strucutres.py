@@ -149,3 +149,24 @@ empty_tuple = ()
 
 single_Item = (1)
 print(single_Item)
+
+num_tuple = (1,2,3,4,5)
+mixed_tuple = (1, "ali", False, None)
+
+print(mixed_tuple)
+
+# Accessing tuple elemnets same as list
+print(mixed_tuple[1])
+print(mixed_tuple[-1]) # last value 
+print(mixed_tuple[-2]) # second last value 
+
+# length
+print("Length of this tuple is ", len(mixed_tuple))
+
+# Iterating throung tuple 
+for n in num_tuple:
+    print(n)
+    
+# lambda function on tuple
+cube = tuple(map( lambda x: x**3, num_tuple))
+print(cube)
