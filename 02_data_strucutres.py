@@ -56,7 +56,7 @@
 # print("Deleted now list looks like this", numbers)
 
 # LIST METHODS
-number_list = [3,1,4,1,5,9,2,6]
+number_list = [3,1,4,1,5,1,9,2,6]
 
 number_list.append(121) # adding at last of the list
 print("list after appending", number_list)
@@ -77,3 +77,22 @@ print("Popping last value", number_list)
 second = number_list.pop(1) # remove the value at index 1
 print(second)
 print("Popping value at the index", number_list)
+
+counted_value = number_list.count(1) # how much time 1 is appeared
+print(f"this value appeared {counted_value} times")
+
+index_8 = number_list.index(1) # on which index 1 exists
+print(f"on {index_8} index value appears first")
+
+number_list.sort()
+print(f"Sorted List {number_list}")
+
+number_list.reverse()
+print(f"reversed list {number_list}")
+
+student = [
+    {"name": "Alice", "grade": 85},
+    {"name": "Ling Shao", "grade": 15},
+    {"name": "Proton", "grade": 65}
+]
+
