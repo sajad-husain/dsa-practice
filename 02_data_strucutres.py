@@ -24,3 +24,10 @@ print(fruits[2])
 print(fruits[0])
 print(fruits[-1]) # last element
 print(fruits[-2]) # second last element
+
+# length of list
+print("length of this list is", len(fruits) )
+
+# Checking if element exists in a list or not
+if "Cherry" in fruits:
+    print("Cherry Exists")
