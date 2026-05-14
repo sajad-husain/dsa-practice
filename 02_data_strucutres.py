@@ -69,3 +69,11 @@ print("list after inserting", number_list)
 
 number_list.remove(1) # remove at 0 index
 print("list after removing the item",number_list)
+
+last = number_list.pop() # remove and return last value of the list 
+print(last)
+print("Popping last value", number_list)
+
+second = number_list.pop(1) # remove the value at index 1
+print(second)
+print("Popping value at the index", number_list)
