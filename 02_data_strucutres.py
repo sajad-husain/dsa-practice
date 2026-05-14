@@ -32,25 +32,40 @@
 # if "Cherry" in fruits:
 #     print("Cherry Exists")
     
-# MODIFYING LISTS
-numbers = [1,2,3,4,5]
+# # MODIFYING LISTS
+# numbers = [1,2,3,4,5]
 
-# change an element
-numbers[0] = 10
-print(numbers)
+# # change an element
+# numbers[0] = 10
+# print(numbers)
 
-# Add an element
-numbers.append(6)
-print(numbers)
+# # Add an element
+# numbers.append(6)
+# print(numbers)
 
-# Remove an element
-numbers.remove(6)
-print(f"after removing string looks like this: {numbers}")
+# # Remove an element
+# numbers.remove(6)
+# print(f"after removing string looks like this: {numbers}")
 
-# inserting at specific position
-numbers.insert(1,99) # at index 1 add 99
-print(numbers)
+# # inserting at specific position
+# numbers.insert(1,99) # at index 1 add 99
+# print(numbers)
 
-# delete by using index
-del numbers[0] #deleted the value at index 0
-print("Deleted now list looks like this", numbers)
+# # delete by using index
+# del numbers[0] #deleted the value at index 0
+# print("Deleted now list looks like this", numbers)
+
+# LIST METHODS
+number_list = [3,1,4,1,5,9,2,6]
+
+number_list.append(121) # adding at last of the list
+print("list after appending", number_list)
+
+number_list.extend([11,12]) # add multiple items
+print("list after extending", number_list)
+
+number_list.insert(0,100) # adding hundred at 0th index
+print("list after inserting", number_list)
+
+number_list.remove(1) # remove at 0 index
+print("list after removing the item",number_list)
