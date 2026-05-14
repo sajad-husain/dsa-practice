@@ -207,3 +207,24 @@ person = {
     "city": "Isd"
 }
 print(person) 
+
+user = dict(name = "Jabir", email = "jabir@gmail.com")
+print(user)
+
+# mixed data dictionary 
+data = {
+    "name": "Junaid",
+    "scores": [85, 90, 78],
+    "is_active": True,
+    "salary": 50000
+}
+print(data)
+
+# adding more data to dictionary 
+person = {
+    "name": "Ali",
+    "age": 25,
+    "city": "Isd",
+    "hobbies": ['reading', 'coding', 'hiking']
+}
+print("after adding data to dictionary", person)
