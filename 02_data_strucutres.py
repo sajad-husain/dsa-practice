@@ -276,3 +276,18 @@ print(fruits)
 all_values = list(inventory.values())
 print(all_values)
 
+# SET set = {1,2,3,4,5} it can have union and intersection operation by default
+
+empty_set = set() # {} is empty dictiornary
+
+num_set = {1,2,3,4,5}
+fruit_set = {'apple', 'banana', "orange"}
+mix_set = {1, 'lichi', False, None}
+
+print(fruit_set)
+print(mix_set)
+
+duplicate = [1,2,2,2,3,3,4,4,5,5]
+remove_duplicate = set(duplicate)
+print(remove_duplicate)
+
