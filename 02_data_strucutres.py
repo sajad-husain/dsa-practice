@@ -133,14 +133,19 @@
 # uppercase = [w.upper() for w in words]
 # print(uppercase)
 
-nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-evens = [ x for x in nums if x % 2 == 0]
-print(evens)
+# evens = [ x for x in nums if x % 2 == 0]
+# print(evens)
 
-greate_than_five = [ x for x in nums if x > 5]
-print(greate_than_five)
+# greate_than_five = [ x for x in nums if x > 5]
+# print(greate_than_five)
 
-result = [ x for x in nums if x % 2 == 0 and x > 4]
-print(result)
+# result = [ x for x in nums if x % 2 == 0 and x > 4]
+# print(result)
 
+# TUPLES work same as array but their value can be accessed but can't be manipulated
+empty_tuple = ()
+
+single_Item = (1)
+print(single_Item)
