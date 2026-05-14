@@ -291,3 +291,8 @@ duplicate = [1,2,2,2,3,3,4,4,5,5]
 remove_duplicate = set(duplicate)
 print(remove_duplicate)
 
+fruit_set.add("mango")
+print("updated fruit set", fruit_set)
+
+fruit_set.remove('apple')
+print(fruit_set)
