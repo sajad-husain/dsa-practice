@@ -145,56 +145,65 @@
 # print(result)
 
 # TUPLES work same as array but their value can be accessed but can't be manipulated
-empty_tuple = ()
+# empty_tuple = ()
 
-single_Item = (1)
-print(single_Item)
+# single_Item = (1)
+# print(single_Item)
 
-num_tuple = (1,2,3,4,5)
-mixed_tuple = (1, "ali", False, None)
+# num_tuple = (1,2,3,4,5)
+# mixed_tuple = (1, "ali", False, None)
 
-print(mixed_tuple)
+# print(mixed_tuple)
 
-# Accessing tuple elemnets same as list
-print(mixed_tuple[1])
-print(mixed_tuple[-1]) # last value 
-print(mixed_tuple[-2]) # second last value 
+# # Accessing tuple elemnets same as list
+# print(mixed_tuple[1])
+# print(mixed_tuple[-1]) # last value 
+# print(mixed_tuple[-2]) # second last value 
 
-# length
-print("Length of this tuple is ", len(mixed_tuple))
+# # length
+# print("Length of this tuple is ", len(mixed_tuple))
 
-# Iterating throung tuple 
-for n in num_tuple:
-    print(n)
+# # Iterating throung tuple 
+# for n in num_tuple:
+#     print(n)
     
-# lambda function on tuple
-cube = tuple(map( lambda x: x**3, num_tuple))
-print(cube)
+# # lambda function on tuple
+# cube = tuple(map( lambda x: x**3, num_tuple))
+# print(cube)
 
-# you can't append values to tuple or assign new value
-# num_tuple.append(6) not possible
-# num_tuple[1] = 2 not possible 
+# # you can't append values to tuple or assign new value
+# # num_tuple.append(6) not possible
+# # num_tuple[1] = 2 not possible 
 
-# YOU CAN ADD ON TOUPLE TO ANOTHER ONE 
-num_tuple = num_tuple + (6,7,8) + (9,10)
-print("after adding more values to the tuple", num_tuple)
+# # YOU CAN ADD ON TOUPLE TO ANOTHER ONE 
+# num_tuple = num_tuple + (6,7,8) + (9,10)
+# print("after adding more values to the tuple", num_tuple)
 
-# unpacking 
-a , b, c = (1,2,3)
-print( a, b, c)
+# # unpacking 
+# a , b, c = (1,2,3)
+# print( a, b, c)
 
-# tuples as dictionaries
-coordinates = {}
+# # tuples as dictionaries
+# coordinates = {}
 
-coordinates[(0,0)] = "origin"
-coordinates[(1,1)] = "diagonal"
-coordinates[(5,3)] = "point"
+# coordinates[(0,0)] = "origin"
+# coordinates[(1,1)] = "diagonal"
+# coordinates[(5,3)] = "point"
 
-print(coordinates[0,0])
+# print(coordinates[0,0])
 
 
-chess_borad = {}
-chess_borad[("a", 1)] = "rook" 
-chess_borad[("b", 2)] = "knight"
+# chess_borad = {}
+# chess_borad[("a", 1)] = "rook" 
+# chess_borad[("b", 2)] = "knight"
 
 # DICTIONARIES IN PYTHON
+empty_dictionary = {}
+empty_dictionary = dict() # Another way to write dictiornay 
+
+person = {
+    "name": "Ali",
+    "age": 25,
+    "city": "Isd"
+}
+print(person) 
