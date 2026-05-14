@@ -182,3 +182,19 @@ print("after adding more values to the tuple", num_tuple)
 # unpacking 
 a , b, c = (1,2,3)
 print( a, b, c)
+
+# tuples as dictionaries
+coordinates = {}
+
+coordinates[(0,0)] = "origin"
+coordinates[(1,1)] = "diagonal"
+coordinates[(5,3)] = "point"
+
+print(coordinates[0,0])
+
+
+chess_borad = {}
+chess_borad[("a", 1)] = "rook" 
+chess_borad[("b", 2)] = "knight"
+
+# DICTIONARIES IN PYTHON
