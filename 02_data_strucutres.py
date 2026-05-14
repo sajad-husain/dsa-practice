@@ -296,3 +296,17 @@ print("updated fruit set", fruit_set)
 
 fruit_set.remove('apple')
 print(fruit_set)
+
+if "mango" in fruit_set:
+    print('exists')
+    
+set_1 = {1,2,3,4}
+set_2 = {3,4,5,6}
+
+# union = set_1 | set_2 # union
+union_set = set_1.union(set_2)
+print("union of seta and setb is", union_set)
+
+# intersection
+sect = set_1.intersection(set_2)
+print("intersection of two sets", sect)
