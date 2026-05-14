@@ -198,61 +198,81 @@
 # chess_borad[("b", 2)] = "knight"
 
 # DICTIONARIES IN PYTHON
-empty_dictionary = {}
-empty_dictionary = dict() # Another way to write dictiornay 
+# empty_dictionary = {}
+# empty_dictionary = dict() # Another way to write dictiornay 
 
-person = {
-    "name": "Ali",
-    "age": 25,
-    "city": "Isd"
-}
-print(person) 
+# person = {
+#     "name": "Ali",
+#     "age": 25,
+#     "city": "Isd"
+# }
+# print(person) 
 
-user = dict(name = "Jabir", email = "jabir@gmail.com")
-print(user)
+# user = dict(name = "Jabir", email = "jabir@gmail.com")
+# print(user)
 
-# mixed data dictionary 
-data = {
-    "name": "Junaid",
-    "scores": [85, 90, 78],
-    "is_active": True,
-    "salary": 50000
-}
-print(data)
+# # mixed data dictionary 
+# data = {
+#     "name": "Junaid",
+#     "scores": [85, 90, 78],
+#     "is_active": True,
+#     "salary": 50000
+# }
+# print(data)
 
-# adding more data to dictionary 
-person = {
-    "name": "Ali",
-    "age": 25,
-    "city": "Isd",
-    "hobbies": ['reading', 'coding', 'hiking']
-}
-print("after adding data to dictionary", person)
+# # adding more data to dictionary 
+# person = {
+#     "name": "Ali",
+#     "age": 25,
+#     "city": "Isd",
+#     "hobbies": ['reading', 'coding', 'hiking']
+# }
+# print("after adding data to dictionary", person)
 
-# Accessing dictionary by key
-print(person["name"])
-print(person["age"])
-print(person["city"])
-print(person["hobbies"])
+# # Accessing dictionary by key
+# print(person["name"])
+# print(person["age"])
+# print(person["city"])
+# print(person["hobbies"])
 
-# using get method for safe access
-print(person.get("name"))
-print(person.get("job"))
-print(person.get("job", "not there")) # default value second paramter men hogi
-print(person.get("age"))
-print(person.get("city"))
-print(person.get("hobbies"))
+# # using get method for safe access
+# print(person.get("name"))
+# print(person.get("job"))
+# print(person.get("job", "not there")) # default value second paramter men hogi
+# print(person.get("age"))
+# print(person.get("city"))
+# print(person.get("hobbies"))
 
-if "name" in person:
-    print("key exists")
+# if "name" in person:
+#     print("key exists")
     
-person["city"] = "Moscow"
-print(person)
+# person["city"] = "Moscow"
+# print(person)
 
-# updating multiple values
-person.update({"age": 23, "job": "Developer"})
-print(person)
+# # updating multiple values
+# person.update({"age": 23, "job": "Developer"})
+# print(person)
 
-# deleting values
-del person["job"]
-print("Dictionary after deleting a value", person)
+# # deleting values
+# del person["job"]
+# print("Dictionary after deleting a value", person)
+
+inventory = {
+    "apple": 50, 
+    "banana": 30, 
+    "orange": 20,
+    "grapes": 25
+}
+
+# iterating over items
+for fruits, quantity in inventory.items():
+    print(f"{fruits} : {quantity}")
+
+# get all keys
+fruits = list(inventory.keys())
+print(fruits)
+
+# get all values
+all_values = list(inventory.values())
+print(all_values)
+
