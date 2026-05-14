@@ -17,7 +17,7 @@ print("Ranged list: ", ranged_list)
 
 # Accessing elements in lists
 fruits = ["Apple", "Oranges", "Cherry", "Banana"]
-prin
+print(fruits)
 
 # Indexing based
 print(fruits[2])
