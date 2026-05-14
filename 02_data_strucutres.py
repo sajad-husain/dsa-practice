@@ -245,3 +245,14 @@ print(person.get("hobbies"))
 
 if "name" in person:
     print("key exists")
+    
+person["city"] = "Moscow"
+print(person)
+
+# updating multiple values
+person.update({"age": 23, "job": "Developer"})
+print(person)
+
+# deleting values
+del person["job"]
+print("Dictionary after deleting a value", person)
