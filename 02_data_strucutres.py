@@ -170,3 +170,15 @@ for n in num_tuple:
 # lambda function on tuple
 cube = tuple(map( lambda x: x**3, num_tuple))
 print(cube)
+
+# you can't append values to tuple or assign new value
+# num_tuple.append(6) not possible
+# num_tuple[1] = 2 not possible 
+
+# YOU CAN ADD ON TOUPLE TO ANOTHER ONE 
+num_tuple = num_tuple + (6,7,8) + (9,10)
+print("after adding more values to the tuple", num_tuple)
+
+# unpacking 
+a , b, c = (1,2,3)
+print( a, b, c)
