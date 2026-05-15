@@ -345,3 +345,10 @@ print(text.strip())
 print(text.lstrip())
 print(text.rstrip())
 print(text.replace(" ", ""))
+
+# search methods
+print(text.startswith("all"))
+print(text.endswith("well"))
+print(text.find("is"))
+print(text.count("a"))
+
