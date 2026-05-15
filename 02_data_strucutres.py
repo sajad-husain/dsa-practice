@@ -357,3 +357,25 @@ print("is it an alphabet", "hello".isalpha())
 print("Is this a digit","123".isdigit())
 print("is this an alphanumerical","afsd123".isalnum())
 print("is there a space", " ".isspace())
+
+# split and join
+words = text.split()
+print("text after splitting", words)
+
+# join with separator
+joined = "-".join(words)
+print("after joining", joined)
+
+# split by character
+# letter = "hello".split("") # error 
+letter = list("hello")
+print(letter)
+
+text = "hello world python"
+new_text = text.replace("python", "code")
+print(new_text)
+
+# aligning string
+print(text.center(30, "-"))
+print(text.rjust(30, "."))
+print(text.ljust(30, "."))
