@@ -278,54 +278,64 @@ print(all_values)
 
 # SET set = {1,2,3,4,5} it can have union and intersection operation by default
 
-empty_set = set() # {} is empty dictiornary
+# empty_set = set() # {} is empty dictiornary
 
-num_set = {1,2,3,4,5}
-fruit_set = {'apple', 'banana', "orange"}
-mix_set = {1, 'lichi', False, None}
+# num_set = {1,2,3,4,5}
+# fruit_set = {'apple', 'banana', "orange"}
+# mix_set = {1, 'lichi', False, None}
 
-print(fruit_set)
-print(mix_set)
+# print(fruit_set)
+# print(mix_set)
 
-duplicate = [1,2,2,2,3,3,4,4,5,5]
-remove_duplicate = set(duplicate)
-print(remove_duplicate)
+# duplicate = [1,2,2,2,3,3,4,4,5,5]
+# remove_duplicate = set(duplicate)
+# print(remove_duplicate)
 
-fruit_set.add("mango")
-print("updated fruit set", fruit_set)
+# fruit_set.add("mango")
+# print("updated fruit set", fruit_set)
 
-fruit_set.remove('apple')
-print(fruit_set)
+# fruit_set.remove('apple')
+# print(fruit_set)
 
-if "mango" in fruit_set:
-    print('exists')
+# if "mango" in fruit_set:
+#     print('exists')
     
-set_1 = {1,2,3,4}
-set_2 = {3,4,5,6}
+# set_1 = {1,2,3,4}
+# set_2 = {3,4,5,6}
 
-# union = set_1 | set_2 # union
-union_set = set_1.union(set_2)
-print("union of seta and setb is", union_set)
+# # union = set_1 | set_2 # union
+# union_set = set_1.union(set_2)
+# print("union of seta and setb is", union_set)
 
-# intersection
-sect = set_1.intersection(set_2)
-print("intersection of two sets", sect)
+# # intersection
+# sect = set_1.intersection(set_2)
+# print("intersection of two sets", sect)
 
-# differece item in first but not in second
-diff = set_1.difference(set_2)
-print(diff)
+# # differece item in first but not in second
+# diff = set_1.difference(set_2)
+# print(diff)
 
-# PRACTICAL SET EXAMPLES
-alice_hobbies = {"reading", "coding", "hiking", "gaming"}
-bob_hobbies = {"coding", "gaming", "sports", "music"}
+# # PRACTICAL SET EXAMPLES
+# alice_hobbies = {"reading", "coding", "hiking", "gaming"}
+# bob_hobbies = {"coding", "gaming", "sports", "music"}
 
-common = alice_hobbies.intersection(bob_hobbies)
-print(common)
+# common = alice_hobbies.intersection(bob_hobbies)
+# print(common)
 
-unique_to_alice = alice_hobbies.difference(bob_hobbies)
-print(unique_to_alice)
+# unique_to_alice = alice_hobbies.difference(bob_hobbies)
+# print(unique_to_alice)
 
-# Removing duplicates and couting uniqure values
-visited = ["NYC", "LA", "NYC", "Chicago", "LA", "NYC"]
-unique = set(visited)
-print(unique)
+# # Removing duplicates and couting uniqure values
+# visited = ["NYC", "LA", "NYC", "Chicago", "LA", "NYC"]
+# unique = set(visited)
+# print(unique)
+
+# STRING METHODS
+
+text = "all is well"
+# case methods in strings
+print("lower case string: ",text.lower())
+print("uppercase string: ", text.upper())
+print("first word capital: ", text.title())
+print("first word capitalized", text.capitalize())
+print("swapping uppercase", text.swapcase())
