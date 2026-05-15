@@ -332,50 +332,57 @@ print(all_values)
 
 # STRING METHODS
 
-text = "all is well"
-# case methods in strings
-print("lower case string: ",text.lower())
-print("uppercase string: ", text.upper())
-print("first word capital: ", text.title())
-print("first word capitalized", text.capitalize())
-print("swapping uppercase", text.swapcase())
+# text = "all is well"
+# # case methods in strings
+# print("lower case string: ",text.lower())
+# print("uppercase string: ", text.upper())
+# print("first word capital: ", text.title())
+# print("first word capitalized", text.capitalize())
+# print("swapping uppercase", text.swapcase())
 
-# whitespace methods
-print(text.strip())
-print(text.lstrip())
-print(text.rstrip())
-print(text.replace(" ", ""))
+# # whitespace methods
+# print(text.strip())
+# print(text.lstrip())
+# print(text.rstrip())
+# print(text.replace(" ", ""))
 
-# search methods
-print(text.startswith("all"))
-print(text.endswith("well"))
-print(text.find("is"))
-print(text.count("a"))
+# # search methods
+# print(text.startswith("all"))
+# print(text.endswith("well"))
+# print(text.find("is"))
+# print(text.count("a"))
 
-# check content
-print("is it an alphabet", "hello".isalpha())
-print("Is this a digit","123".isdigit())
-print("is this an alphanumerical","afsd123".isalnum())
-print("is there a space", " ".isspace())
+# # check content
+# print("is it an alphabet", "hello".isalpha())
+# print("Is this a digit","123".isdigit())
+# print("is this an alphanumerical","afsd123".isalnum())
+# print("is there a space", " ".isspace())
 
-# split and join
-words = text.split()
-print("text after splitting", words)
+# # split and join
+# words = text.split()
+# print("text after splitting", words)
 
-# join with separator
-joined = "-".join(words)
-print("after joining", joined)
+# # join with separator
+# joined = "-".join(words)
+# print("after joining", joined)
 
-# split by character
-# letter = "hello".split("") # error 
-letter = list("hello")
-print(letter)
+# # split by character
+# # letter = "hello".split("") # error 
+# letter = list("hello")
+# print(letter)
 
-text = "hello world python"
-new_text = text.replace("python", "code")
-print(new_text)
+# text = "hello world python"
+# new_text = text.replace("python", "code")
+# print(new_text)
 
-# aligning string
-print(text.center(30, "-"))
-print(text.rjust(30, "."))
-print(text.ljust(30, "."))
+# # aligning string
+# print(text.center(30, "-"))
+# print(text.rjust(30, "."))
+# print(text.ljust(30, "."))
+
+# # F-String
+# print(f"this is f string which included {joined}, {letter}")
+
+# Regular expression
+import re
+text = "The year is 2024"
