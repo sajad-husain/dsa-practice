@@ -314,3 +314,18 @@ print("intersection of two sets", sect)
 # differece item in first but not in second
 diff = set_1.difference(set_2)
 print(diff)
+
+# PRACTICAL SET EXAMPLES
+alice_hobbies = {"reading", "coding", "hiking", "gaming"}
+bob_hobbies = {"coding", "gaming", "sports", "music"}
+
+common = alice_hobbies.intersection(bob_hobbies)
+print(common)
+
+unique_to_alice = alice_hobbies.difference(bob_hobbies)
+print(unique_to_alice)
+
+# Removing duplicates and couting uniqure values
+visited = ["NYC", "LA", "NYC", "Chicago", "LA", "NYC"]
+unique = set(visited)
+print(unique)
