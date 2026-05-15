@@ -339,3 +339,9 @@ print("uppercase string: ", text.upper())
 print("first word capital: ", text.title())
 print("first word capitalized", text.capitalize())
 print("swapping uppercase", text.swapcase())
+
+# whitespace methods
+print(text.strip())
+print(text.lstrip())
+print(text.rstrip())
+print(text.replace(" ", ""))
