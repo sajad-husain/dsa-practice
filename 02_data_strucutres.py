@@ -352,3 +352,8 @@ print(text.endswith("well"))
 print(text.find("is"))
 print(text.count("a"))
 
+# check content
+print("is it an alphabet", "hello".isalpha())
+print("Is this a digit","123".isdigit())
+print("is this an alphanumerical","afsd123".isalnum())
+print("is there a space", " ".isspace())
