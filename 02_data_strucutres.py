@@ -386,3 +386,6 @@ print(all_values)
 # Regular expression
 import re
 text = "The year is 2024"
+match = re.search(r"\d+", text)
+print(match.group())
+print(match.start())
