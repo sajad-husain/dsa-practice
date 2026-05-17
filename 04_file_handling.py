@@ -25,3 +25,9 @@ with open("output.txt", "a") as file:
 new_lines = ["line 1", "line 2", "line 3"]
 with open("output.txt", "w") as file:
     file.writelines(f"{new_lines}\n")
+
+# write dictioy to json file
+import json
+data = {"name": "Alice", "age": 25, "city": "NYC"}
+with open("data.json", "w") as file:
+    json.dump(data, file, indent=2)
