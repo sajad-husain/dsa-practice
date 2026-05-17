@@ -400,3 +400,11 @@ print(new_text)
 text = "PK12345"
 result = re.match(r"[A-Z]{2}\d{5}", text)
 print(result.group())  # PK12345
+
+def validateEmail(email):
+    pattern = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+    if re.match(pattern, email):
+        return True
+    return False
+print(validateEmail("ali@gmail.com"))
+print(validateEmail("ali@.com"))
