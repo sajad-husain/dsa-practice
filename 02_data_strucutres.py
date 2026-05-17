@@ -392,3 +392,7 @@ if result:
 
 found_number = re.findall(r"\d{3,4}-\d{7}", text)
 print("Found Numbers:", found_number)
+
+text = "Call me at 0300-1234567"
+new_text = re.sub(r"\d{4}-\d{7}", "XXX-XXXXXXX", text)
+print(new_text)
