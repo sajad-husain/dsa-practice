@@ -408,3 +408,18 @@ def validateEmail(email):
     return False
 print(validateEmail("ali@gmail.com"))
 print(validateEmail("ali@.com"))
+
+def validate_pk_phone(number):
+    patterns = [
+        r"^03\d{9}$",
+        r"^03\d{2}-\d{7}$",
+        r"^\+92\d{10}$"
+    ]
+    for pattern in patterns:
+        if(re.match(pattern, number)):
+            return True
+        return False
+
+print(validate_pk_phone("03001234567"))     # True
+print(validate_pk_phone("0300-1234567"))    # True
+print(validate_pk_phone("+923001234567"))   # True
