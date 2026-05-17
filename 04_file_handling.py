@@ -31,3 +31,31 @@ import json
 data = {"name": "Alice", "age": 25, "city": "NYC"}
 with open("data.json", "w") as file:
     json.dump(data, file, indent=2)
+    
+# count lines
+with open("data.txt", "r") as file:
+    line_count = sum(1 for _ in file)
+    print(f"Total lines: {line_count}")
+
+# "r" - Read (default)
+with open("file.txt", "r") as f:
+    content = f.read()
+    
+# "w" - Write (creates new, overwrites existing)
+with open("file.txt", "w") as f:
+    f.write("New content")
+    
+# "a" - Append (add to end)
+with open("file.txt", "a") as f:
+    f.write("Appended content")
+    
+# "r+" - Read and write
+with open("file.txt", "r+") as f:
+    content = f.read()
+    f.write("Added content")
+
+# "w+" - Write and read (overwrites)
+# "a+" - Append and read
+# "b" suffix - Binary mode (for images, etc.)
+with open("image.jpg", "rb") as f:
+    binary_data = f.read()
