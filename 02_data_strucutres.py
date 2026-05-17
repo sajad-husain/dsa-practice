@@ -257,24 +257,24 @@
 # del person["job"]
 # print("Dictionary after deleting a value", person)
 
-inventory = {
-    "apple": 50, 
-    "banana": 30, 
-    "orange": 20,
-    "grapes": 25
-}
+# inventory = {
+#     "apple": 50, 
+#     "banana": 30, 
+#     "orange": 20,
+#     "grapes": 25
+# }
 
-# iterating over items
-for fruits, quantity in inventory.items():
-    print(f"{fruits} : {quantity}")
+# # iterating over items
+# for fruits, quantity in inventory.items():
+#     print(f"{fruits} : {quantity}")
 
-# get all keys
-fruits = list(inventory.keys())
-print(fruits)
+# # get all keys
+# fruits = list(inventory.keys())
+# print(fruits)
 
-# get all values
-all_values = list(inventory.values())
-print(all_values)
+# # get all values
+# all_values = list(inventory.values())
+# print(all_values)
 
 # SET set = {1,2,3,4,5} it can have union and intersection operation by default
 
@@ -385,7 +385,10 @@ print(all_values)
 
 # Regular expression
 import re
-text = "The year is 2024"
-match = re.search(r"\d+", text)
-print(match.group())
-print(match.start())
+text = "Mere numbers: 0300-1234567, 042-1234567, 021-1234567"
+result = re.search(r"\d{4}-\d{7}", text)
+if result:
+    print("Found", result.group())
+
+found_number = re.findall(r"\d{3,4}-\d{7}", text)
+print("Found Numbers:", found_number)
