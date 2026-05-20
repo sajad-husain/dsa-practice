@@ -59,3 +59,4 @@ with open("file.txt", "r+") as f:
 # "b" suffix - Binary mode (for images, etc.)
 with open("image.jpg", "rb") as f:
     binary_data = f.read()
+    
