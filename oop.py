@@ -31,3 +31,15 @@ class BankAccount:
 account = BankAccount(1000)
 account.deposit(500)
 account.show_balance()
+
+class Animal:
+    def sound(self):
+        print("Animal makes a sound")
+
+
+class Dog(Animal):
+    pass
+
+
+dog = Dog()
+dog.sound()
