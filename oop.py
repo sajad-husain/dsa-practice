@@ -56,3 +56,18 @@ class Penguin(Bird):
 
 p = Penguin()
 p.fly()
+
+class Cat:
+    def sound(self):
+        print("Meow")
+
+
+class Cow:
+    def sound(self):
+        print("Moo")
+
+
+animals = [Cat(), Cow()]
+
+for animal in animals:
+    animal.sound()
