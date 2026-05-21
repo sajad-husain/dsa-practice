@@ -43,3 +43,16 @@ class Dog(Animal):
 
 dog = Dog()
 dog.sound()
+
+class Bird:
+    def fly(self):
+        print("Bird can fly")
+
+
+class Penguin(Bird):
+    def fly(self):
+        print("Penguin cannot fly")
+
+
+p = Penguin()
+p.fly()
