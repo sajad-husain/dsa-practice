@@ -94,3 +94,14 @@ class Square(Shape):
 sq = Square(4)
 print("Area:", sq.area())
 
+class Employee:
+    company = "Google"
+
+    def __init__(self, name):
+        self.name = name
+
+
+e1 = Employee("Ahmed")
+
+print(e1.name)
+print(Employee.company)
