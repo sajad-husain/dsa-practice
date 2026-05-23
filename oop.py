@@ -423,3 +423,16 @@ p2 = Player("Rizwan")
 print(p1.name)
 print(p2.name)
 
+class Duck:
+    def walk(self):
+        print("Duck walks")
+
+
+class Human:
+    def walk(self):
+        print("Human walks")
+
+
+for obj in [Duck(), Human()]:
+    obj.walk()
+
