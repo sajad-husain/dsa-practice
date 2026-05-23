@@ -305,3 +305,17 @@ b = Bike()
 b.start()
 b.ride()
 
+class GrandParent:
+    pass
+
+
+class Parent(GrandParent):
+    pass
+
+
+class Child(Parent):
+    pass
+
+
+print(issubclass(Child, GrandParent))
+
