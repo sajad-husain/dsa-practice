@@ -289,3 +289,19 @@ class Student:
 
 s = Student("Ahmed")
 s.show()
+
+# vehicle porject
+class Vehicle:
+    def start(self):
+        print("Vehicle started")
+
+
+class Bike(Vehicle):
+    def ride(self):
+        print("Bike is riding")
+
+
+b = Bike()
+b.start()
+b.ride()
+
