@@ -344,3 +344,4 @@ s1 = Singleton()
 s2 = Singleton()
 
 print(s1 == s2)
+
