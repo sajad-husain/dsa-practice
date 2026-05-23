@@ -192,3 +192,19 @@ p2 = Point(10)
 
 result = p1 + p2
 print(result.x)
+
+class Teacher:
+    def __init__(self, name):
+        self.name = name
+
+
+class Student:
+    def __init__(self, name, teacher):
+        self.name = name
+        self.teacher = teacher
+
+
+t1 = Teacher("Mr. Khan")
+s1 = Student("Ali", t1)
+
+print(f"{s1.name} is taught by {s1.teacher.name}")
