@@ -105,3 +105,13 @@ e1 = Employee("Ahmed")
 
 print(e1.name)
 print(Employee.company)
+
+
+class MathUtils:
+
+    @staticmethod
+    def add(a, b):
+        return a + b
+
+
+print(MathUtils.add(5, 3))
