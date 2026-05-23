@@ -319,3 +319,15 @@ class Child(Parent):
 
 print(issubclass(Child, GrandParent))
 
+class Logger:
+    instances = 0
+
+    def __init__(self):
+        Logger.instances += 1
+
+
+l1 = Logger()
+l2 = Logger()
+
+print(Logger.instances)
+
