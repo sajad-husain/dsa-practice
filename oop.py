@@ -368,3 +368,16 @@ class Computer:
 
 pc = Computer()
 pc.cpu.process()
+
+class Number:
+    def __init__(self, value):
+        self.value = value
+
+    def __len__(self):
+        return self.value
+
+
+n = Number(10)
+
+print(len(n))
+
