@@ -245,3 +245,19 @@ class User:
 u1 = User("Ali", 22)
 
 print(u1.name, u1.age)
+
+class Lion:
+    def sound(self):
+        return "Roar"
+
+
+class Goat:
+    def sound(self):
+        return "Mehh"
+
+
+animals = [Lion(), Goat()]
+
+for animal in animals:
+    print(animal.sound())
+    
