@@ -389,3 +389,14 @@ class Circle:
 c = Circle()
 
 print(c.area(5))
+
+class MobilePhone:
+    def __init__(self, brand):
+        self.brand = brand
+
+    def show_brand(self):
+        print(self.brand)
+
+
+phone = MobilePhone("Samsung")
+phone.show_brand()
