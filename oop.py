@@ -178,3 +178,17 @@ class Product:
 
 p = Product(500)
 print(p.price)
+
+class Point:
+    def __init__(self, x):
+        self.x = x
+
+    def __add__(self, other):
+        return Point(self.x + other.x)
+
+
+p1 = Point(5)
+p2 = Point(10)
+
+result = p1 + p2
+print(result.x)
