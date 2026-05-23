@@ -345,3 +345,13 @@ s2 = Singleton()
 
 print(s1 == s2)
 
+class Bank:
+    def deposit(self, amount):
+        if amount <= 0:
+            print("Invalid amount")
+        else:
+            print("Deposited:", amount)
+
+
+b = Bank()
+b.deposit(-100)
