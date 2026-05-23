@@ -131,3 +131,21 @@ p1 = Person()
 p2 = Person()
 
 print(Person.total_people())
+
+class Father:
+    def skills(self):
+        print("Gardening")
+
+
+class Mother:
+    def talents(self):
+        print("Cooking")
+
+
+class Child(Father, Mother):
+    pass
+
+
+c = Child()
+c.skills()
+c.talents()
