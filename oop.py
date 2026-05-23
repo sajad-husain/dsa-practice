@@ -235,3 +235,13 @@ emp = Employee()
 emp.set_salary(50000)
 
 print(emp.get_salary())
+
+class User:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+u1 = User("Ali", 22)
+
+print(u1.name, u1.age)
