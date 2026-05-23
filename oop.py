@@ -411,3 +411,14 @@ class Account:
 a = Account(1000)
 
 print(a.balance)
+
+class Player:
+    def __init__(self, name):
+        self.name = name
+
+
+p1 = Player("Babar")
+p2 = Player("Rizwan")
+
+print(p1.name)
+print(p2.name)
