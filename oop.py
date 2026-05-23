@@ -208,3 +208,14 @@ t1 = Teacher("Mr. Khan")
 s1 = Student("Ali", t1)
 
 print(f"{s1.name} is taught by {s1.teacher.name}")
+
+class Book:
+    def __init__(self, title):
+        self.title = title
+
+    def __str__(self):
+        return f"Book: {self.title}"
+
+
+book = Book("Python Basics")
+print(book)
