@@ -219,3 +219,19 @@ class Book:
 
 book = Book("Python Basics")
 print(book)
+
+class Employee:
+    def __init__(self):
+        self.__salary = 0
+
+    def set_salary(self, amount):
+        self.__salary = amount
+
+    def get_salary(self):
+        return self.__salary
+
+
+emp = Employee()
+emp.set_salary(50000)
+
+print(emp.get_salary())
