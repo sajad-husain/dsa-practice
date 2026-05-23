@@ -355,3 +355,16 @@ class Bank:
 
 b = Bank()
 b.deposit(-100)
+
+class CPU:
+    def process(self):
+        print("Processing...")
+
+
+class Computer:
+    def __init__(self):
+        self.cpu = CPU()
+
+
+pc = Computer()
+pc.cpu.process()
