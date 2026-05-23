@@ -115,3 +115,19 @@ class MathUtils:
 
 
 print(MathUtils.add(5, 3))
+
+class Person:
+    count = 0
+
+    def __init__(self):
+        Person.count += 1
+
+    @classmethod
+    def total_people(cls):
+        return cls.count
+
+
+p1 = Person()
+p2 = Person()
+
+print(Person.total_people())
