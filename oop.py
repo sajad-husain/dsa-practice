@@ -400,3 +400,14 @@ class MobilePhone:
 
 phone = MobilePhone("Samsung")
 phone.show_brand()
+
+class Account:
+    # This class stores account balance
+
+    def __init__(self, balance):
+        self.balance = balance
+
+
+a = Account(1000)
+
+print(a.balance)
